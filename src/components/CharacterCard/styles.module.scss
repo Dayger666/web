@@ -1,0 +1,52 @@
+@import 'src/styles/utils/mixins';
+
+.card {
+  @include flex();
+  height: 220px;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: $card-shadow;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  img {
+    width: 230px;
+    height: 220px;
+  }
+
+  .description {
+    @include flex(column);
+    width: 100%;
+    row-gap: 1rem;
+    padding: 0.75rem;
+    background-color: $grey-color;
+
+    .nameContainer {
+      @include flex(column);
+      color: $white-color;
+
+      .name {
+        font-size: 1.5rem;
+        font-weight: 800;
+      }
+      .info {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+
+    .location {
+      font-size: 16px;
+      font-weight: 500;
+      color: $light-grey-color;
+
+      .label {
+        color: $text-grey-color;
+      }
+    }
+  }
+}

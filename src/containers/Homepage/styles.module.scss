@@ -1,0 +1,22 @@
+@import 'src/styles/utils/mixins';
+
+.title {
+  padding-bottom: 6rem;
+  text-align: center;
+  color: $default-font-color;
+  font-weight: 900;
+  font-size: 5.625rem;
+
+  @include maxMobile {
+    padding-bottom: 4rem;
+    font-size: 3rem;
+  }
+}
+
+.cardContainer {
+  padding: 4rem 2rem;
+}
+
+.paginator {
+  @include flex(row, center, center);
+}

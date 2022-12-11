@@ -1,0 +1,33 @@
+@import 'src/styles/utils/mixins';
+
+.profile-button {
+  align-items: center;
+
+  &-email {
+    margin-right: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: normal;
+    color: $text-silver-color
+  }
+
+  &-image {
+    @include flex(row, center, center);
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    background: $background-icon-color;
+    border-radius: 100%;
+
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    svg {
+      fill: $white-color;
+    }
+  }
+}

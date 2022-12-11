@@ -1,0 +1,13 @@
+@import 'src/styles/utils/mixins';
+
+.container {
+  @include flex(column, center, center);
+  max-width: 700px;
+  width: 100%;
+  padding: 3rem;
+  background-color: $white-color;
+  border-radius: 1rem;
+  img {
+    border-radius: 50%;
+  }
+}

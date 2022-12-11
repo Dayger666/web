@@ -1,0 +1,15 @@
+@import './variables';
+
+@mixin flex($fd: row, $jc: initial, $ai: initial, $fw: nowrap) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-wrap: $fw;
+}
+
+@mixin maxMobile {
+  @media (max-width: $max-mobile-width) {
+    @content;
+  }
+}

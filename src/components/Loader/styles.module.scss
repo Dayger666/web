@@ -1,0 +1,6 @@
+@import 'src/styles/utils/mixins';
+
+.loader {
+  @include flex(row, center, center);
+  height: 100vh;
+}

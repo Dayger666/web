@@ -1,0 +1,46 @@
+@import 'utils/mixins';
+
+html {
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  backface-visibility: hidden;
+  color: $default-font-color;
+}
+
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  line-height: unset;
+  scroll-behavior: unset;
+  font-feature-settings: "tnum" 0;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+a {
+  color: $default-font-color;
+
+  &:hover {
+    color: $default-color-hover;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  margin: 0;
+}

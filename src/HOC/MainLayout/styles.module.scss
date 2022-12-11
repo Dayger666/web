@@ -1,0 +1,15 @@
+@import 'src/styles/utils/mixins';
+
+.layout {
+  min-height: 100vh;
+
+  .contentContainer {
+    @include flex(row, center, center);
+    padding: 6rem 0;
+
+    @include maxMobile {
+      padding: 3rem 0;
+    }
+  }
+
+}
