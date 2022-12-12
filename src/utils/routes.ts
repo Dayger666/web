@@ -17,4 +17,10 @@ export const ROUTES = {
   SIGN_UP: {
     path: '/sign-up',
   },
+  USERS: {
+    path: '/users',
+    getRoute: (slug: number | string = '') => ({
+      path: `/users/${slug}`,
+    }),
+  },
 };

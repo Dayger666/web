@@ -19,7 +19,6 @@ import { ICharacter } from 'interfaces/character-interface';
 function* fetchCharacter({ payload }: PayloadAction<IListParams>) {
   try {
     start();
-    console.info(payload);
     const response: IRickAndMortyResponse<ICharacter> = yield call(charactersApi.getOne, payload);
     yield put(fetchCharacterSuccess(response));
     done();

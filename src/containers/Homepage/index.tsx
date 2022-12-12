@@ -13,7 +13,6 @@ import {
 } from 'antd';
 
 import {
-  selectCharactersIsLoading,
   selectCharactersList,
   selectCharactersCount,
 } from 'redux/selectors/characters-selector';
@@ -28,7 +27,6 @@ const { Content } = Layout;
 
 const Homepage: FC = () => {
   const dispatch = useDispatch();
-  const isLoading = useSelector(selectCharactersIsLoading);
   const characters = useSelector(selectCharactersList);
   const count = useSelector(selectCharactersCount);
   const [currentPage, setCurrentPage] = useState<number>(1);

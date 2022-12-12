@@ -20,7 +20,6 @@ const charactersApi = {
 
   getOne({ id }: IListParams): Promise<IRickAndMortyResponse<ICharacter>> {
     const url = ROUTES.CHARACTER.getRoute(id).path;
-    console.info(url);
     const client = axiosClient.getRickAndMortyClient();
 
     return client.get(url);

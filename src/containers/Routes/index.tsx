@@ -7,7 +7,7 @@ import {
 import NotFound from 'containers/NotFound';
 import { publicRoutes } from 'config/routesMap';
 
-const RoutesLayout: FC = () => (
+const RoutesLayout: FC = () => ( // TODO ADD ROUTES FOR LOGIN/LOGOUT
   <Routes>
     {publicRoutes && publicRoutes.map(({ Element, path }) => (
       <Route

@@ -1,3 +1,5 @@
+import { AxiosRequestHeaders } from 'axios';
+
 export interface IListParams {
   page?: number;
   id?: string,
@@ -20,4 +22,9 @@ export interface IRickAndMortyListResponse<T> {
 
 export interface IRickAndMortyResponse<T> {
   data: T
+}
+
+export interface IListResponse<T> {
+  data: T;
+  headers: AxiosRequestHeaders,
 }
